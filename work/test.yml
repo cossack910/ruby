@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ruby2.5.7:
+    restart: always
+    build: .
+    container_name: 'ruby'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./work:/root/work
