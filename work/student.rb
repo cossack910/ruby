@@ -17,5 +17,23 @@ class Hello
 
 end
 
-hello = Hello.new('unko')
-puts hello.name
+class Poop
+
+    def deru
+        unko
+    end
+
+    def unko
+        "tinko"
+    end
+end
+
+class Mini_poop < Poop
+    def unko
+        super
+        p "unko"
+    end
+end
+
+p = Mini_poop.new
+p.unko
